@@ -16,4 +16,7 @@ data = data.iloc[::-1] #reverse the dataset, I want January - May
 teslaStockPrice = data.plot(y="Last",title="Tesla 2019 Historical Stock Price")
 teslaStockPrice.set_xlabel("Date")
 teslaStockPrice.set_ylabel("Stock Price")
+teslaTradeVolume = data.plot(y="Volume", title="Tesla 2019 Historical Trade Volume")
+teslaTradeVolume.set_xlabel("Date")
+teslaTradeVolume.set_ylabel("Trade Volume")
 plt.show()
